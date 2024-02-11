@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarjetas",
+  "info": {
+    "singularName": "tarjeta",
+    "pluralName": "tarjetas",
+    "displayName": "Tarjeta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "cantidad": {
+      "type": "decimal",
+      "default": 100
+    },
+    "nombre": {
+      "type": "string",
+      "default": "Tarjeta de Regalo MakCoin"
+    },
+    "cobrada": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
